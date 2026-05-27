@@ -25,7 +25,7 @@ function App() {
     try {
       setLoading(true);
 
-      const res = await axios.post("http://localhost:5000/submit", form);
+      const res = await axios.post("https://shecan-task.onrender.com/submit", form);
 
       toast.success(res.data.msg);
 
